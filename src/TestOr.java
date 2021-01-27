@@ -14,6 +14,15 @@ public class TestOr {
 //        if( 5 && 6){
 //            System.out.println("this won't work");
 //        }
+
+        int z = 5;
+//        shot-circuit once get true, will stop the rest for  || &&
+        if(++z > 5 || ++z > 6) z++;
+        System.out.println(z);
+        z = 5;
+//        non-short-circuit will run both side, no matter what the result is(true, or false) ,for | &
+        if(++z > 5 | ++z > 6) z++;
+        System.out.println(z);
     }
     public static boolean isItSmall(int i){
         if(i < 5){
