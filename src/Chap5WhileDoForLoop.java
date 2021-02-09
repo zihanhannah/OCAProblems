@@ -110,6 +110,43 @@ public class Chap5WhileDoForLoop {
 //        }
 
 
+//        boolean problem = true;
+//        while(true){
+//            if(problem){
+//                System.out.println("there was a problem");
+////                a break statment(unlabeled) will exit out of the innermost LOOPING construct
+//                break;
+//            }
+//        }
+//        while(true){
+//            if(problem){
+////                continue unlabeled
+//                continue;
+//            }
+////            this is a infinity loop
+//            System.out.println("there was a problem");
+//        }
 
+
+////        labeled break and continue
+//        boolean isTrue = true;
+//        outer:
+//        for(int i = 0; i < 5; i++){
+//            while(isTrue){
+//                System.out.println("Hello");
+//                break outer;
+//            }
+//        }
+//        System.out.println("Good bye");
+
+        outer:
+        for(int i = 0; i < 5; i++){
+            for(int j = 0; j < 5; j++){
+                System.out.println("Hello: i " + i + " j " + j);
+                continue outer;
+            }
+            System.out.println("outer");
+        }
+        System.out.println("good-bye");
     }
 }
