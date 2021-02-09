@@ -76,7 +76,7 @@ public class Chap4 {
 //        System.out.println( "mask: " + mask + " count: " + count);
 
 
-//problem 10
+//problem 11
         boolean b1 = false;
         boolean b2;
         int x = 2, y = 5;
