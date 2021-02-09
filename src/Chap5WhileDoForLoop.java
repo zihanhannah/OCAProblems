@@ -91,5 +91,25 @@ public class Chap5WhileDoForLoop {
 //        }
 
 
+////        break and continue: break: stop the entire innermost loop and start processing the next line of the code
+////        After the block;inside loop or switch statement;
+////        continue: stop the current iteration of the innermost loop and the start the next iteration of the same
+////        loop; inside the loop
+//        for(int i = 0; i < 10; i++){
+//            System.out.println("inside loop , continue " + i);
+//            continue;
+//        }
+//        for(int i = 0; i < 10; i++){
+//            continue;
+////            the next line is Unreachable
+////            System.out.println("inside loop , continue " + i);
+//        }
+//        for(int i = 0; i < 10; i++){
+//            System.out.println("inside loop, break " + i);
+//            break;
+//        }
+
+
+
     }
 }
