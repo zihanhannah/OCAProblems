@@ -1,3 +1,6 @@
+import java.util.Arrays;
+import java.util.Objects;
+
 public class Chap5WhileDoForLoop {
     public static void main(String[] args) {
 ////        variables in the while loop must be declared before the expression is evaluated, the value in expression
@@ -51,6 +54,40 @@ public class Chap5WhileDoForLoop {
 
 //        for(int i = 0, j = 0; i< 10 && j < 10 ; i++, j++){
 //            System.out.println("i is " + i + " j is " + j);
+//        }
+
+////      for loop: iteration part, don't need to set up as increment or anything
+//        int b = 3;
+//        for(int a = 1; b != 1; System.out.println("iterate") ){
+//            b = b - a;
+//        }
+////        b's value changed
+//        System.out.println(b);
+
+
+////        the enhanced for loop , for-each loop: for(declaration : expression)
+//        int[] a = {1,2, 3,4};
+//        for(int x = 0; x < a.length; x++){
+//            System.out.println(a[x]);
+//        }
+//        for (int n : a){
+//            System.out.println(n);
+//        }
+
+
+
+//        long[] la = {7L, 8L,9L};
+//        int[][] twoDee ={{1,2,3},{4,5,6},{7,8,9}};
+//        String[] sNums = {"one","two","three"};
+//        for(int[] dee : twoDee){
+////            must use Arrays.toString to get the int[] 's value
+//            System.out.println(Arrays.toString(dee));
+//        }
+//        for(Object o: sNums){
+//            System.out.println(o);
+//        }
+//        for(String s: sNums){
+//            System.out.println(s);
 //        }
 
 
