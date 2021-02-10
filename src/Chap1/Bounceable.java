@@ -11,7 +11,6 @@ public interface Bounceable {
 //    what compiler sees
 //    public abstract void bounce();
 //    public abstract void setBounceFactor(int bf);
-//    @todo all the variables in the interface must be public static and final. only constants, not instance variables.
     void bounce();
     void setBounceFactor(int bf);
 // legal : abstract public void bounce();
@@ -22,7 +21,8 @@ public interface Bounceable {
 //    final void bounce();
 
 
-//constant in interface: must be public static final (implicit) (any class implementing the interface will have
+// @todo constant in interface: must be public static final (implicit)
+//  (any class implementing the interface will have
 // access to the same constant) check class Zap to see more detail
     int BAR = 42;
 //legal: public static final int BAR = 42;
@@ -33,5 +33,27 @@ public interface Bounceable {
 //    static final int BAR = 42;
 //    public final int BAR = 42;
     void go();
+
+
+// @todo default method in interface, is public by definition(optional)
+//cannot be marked as private, protected, static, final, or abstract
+//must have a concrete method body
+    default int ml(){return 1;}
+    public default void m2(){}
+////    illegal
+//    static default void m3(){}
+//    default void m4();
+
+
+// @todo static interface method
+// public by definition(optional)
+// cannot be marked as private, protected, static, final, or abstract
+// must have a concrete method body
+// when invoking this method, method's type(interface name) must be included in the invocation
+    static int m1(){return 42;}
+    public static void m22(){};
+////    illegal
+//    final static void m3(){ }
+//    static void m5();
 
 }
