@@ -7,6 +7,13 @@ import static java.lang.Integer.*;
 //import static java.lang.System.out;
 import static java.lang.System.*;
 //doesn't work for import static java.lang.*;
+
+//@todo class can ONLY be public or default, （default for class only used in SAME package) the method, variables can be
+// any four
+// of the modifiers
+//public class can be accessed by any classes, but in different package , you need to import it. in the same file,
+// only one public class, and it must be the same name as the file's name
+//default class can be accessed by the SAME package
 public class Chap1 {
 //    main()method can be writen like those: @todo "public static" can be "static public"
 //    public static void main(String... args){
@@ -30,5 +37,7 @@ public class Chap1 {
 //        System.out.println(Integer.toHexString(42));
 
 
+
     }
 }
+

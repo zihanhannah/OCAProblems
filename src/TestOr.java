@@ -23,6 +23,13 @@ public class TestOr {
 //        non-short-circuit will run both side, no matter what the result is(true, or false) ,for | &
         if(++z > 5 | ++z > 6) z++;
         System.out.println(z);
+//      ^ exclusive-OR(XOR) ,non-short0circuit operators, only one true will return true
+//        both true => false
+        System.out.println("XOR " + ((2<3)^ (4>3)));
+//        one true one false => true
+        System.out.println("XOR " + ((2<3)^ (4<3)));
+//        == beats & |
+        System.out.println((true & false == false | true) + " " + ((true & false) == (false | true)));
     }
     public static boolean isItSmall(int i){
         if(i < 5){
