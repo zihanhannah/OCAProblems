@@ -13,6 +13,8 @@ public class Kid extends Parent{
 ////        private method in parent class cannot be seen in child class
 //        System.out.println(doThings());
 
+////  default method/variable in different package cannot be seen in the subclass
+//        System.out.println("y is " + y);
     }
 
 }

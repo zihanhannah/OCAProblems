@@ -9,4 +9,7 @@ public class Parent {
 //    protected String doThings(){
 //        return "fun";
 //    }
+
+//    default method/ variable
+    int y = 9;
 }
