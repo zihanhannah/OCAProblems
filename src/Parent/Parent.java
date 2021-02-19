@@ -1,4 +1,8 @@
 package Parent;
+
+import Chap1.Bounceable;
+
+
 //if change class Parent to default, it cannot be inherited by the class outside the same package
 public class Parent {
     protected int x = 9;
@@ -12,4 +16,9 @@ public class Parent {
 
 //    default method/ variable
     int y = 9;
+
+    public final void showSample(){
+        System.out.println("Final method cannot be inherited");
+    }
+
 }

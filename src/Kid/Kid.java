@@ -15,6 +15,17 @@ public class Kid extends Parent{
 
 ////  default method/variable in different package cannot be seen in the subclass
 //        System.out.println("y is " + y);
+////@todo NO access modifiers can be applied to local variables,only final can be applied to local variables
+//private int x = 7;
+    }
+////   @todo compile error: final method in superclass cannot be inherited
+//    public void showSample(){
+//        System.out.println("Another thing");
+//    }
+
+//    argument can be final, but the value of the final variable cannot be changed
+    public void getKid(int fileNumber, final int recNumber){
+
     }
 
 }

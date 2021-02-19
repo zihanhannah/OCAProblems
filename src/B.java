@@ -1,4 +1,5 @@
-interface Foo{}
+interface Foo{
+}
 class A implements  Foo{}
 public class B extends A {
     public static void main(String[] args) {

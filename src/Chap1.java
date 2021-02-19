@@ -15,13 +15,17 @@ import static java.lang.System.*;
 // only one public class, and it must be the same name as the file's name
 //default class can be accessed by the SAME package
 public class Chap1 {
+////    @todo Var-args : only one var-args, and must be the last
+////    legal
+//    void doStuff(int... x){}
+//    void doStuff2(char c, int... x){}
+//    void doStuff3(int[]... animal){ }
+
 //    main()method can be writen like those: @todo "public static" can be "static public"
 //    public static void main(String... args){
 //    static public void main(String args[]){
 //    public static void main(String... anyName){
    public static void main(String[] args) {
-
-
 ////        two ways to do it
 //        ArrayList<String> a1 = new ArrayList<String>();
 //        java.util.ArrayList<String> a = new java.util.ArrayList<>();
@@ -35,9 +39,7 @@ public class Chap1 {
 ////        you need to type out all the information
 //        System.out.println(Integer.MAX_VALUE);
 //        System.out.println(Integer.toHexString(42));
-
-
-
+       
     }
 }
 
