@@ -12,6 +12,8 @@ class ReadData {
             byte b[] = new byte[1000];
             raf.readFully(b,0,100);
         }
+//todo !!!the handlers for the most specific exceptions MUST always be placed above those for more general exception
+
         catch(FileNotFoundException e){
             System.err.println("File not found");
             System.err.println(e.getMessage());
@@ -22,6 +24,10 @@ class ReadData {
             System.err.println(e.toString());
             e.printStackTrace();
         }
+//        will keep running the code after catch the exception
+        System.out.println("Hello");
+
+
 //  todo   File not found
 //myfile.txt (No such file or directory)
 //java.io.FileNotFoundException: myfile.txt (No such file or directory)
