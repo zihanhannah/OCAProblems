@@ -94,6 +94,29 @@ class Test {
 ////  reason: actual and formal argument lists differ in length
 //        LocalDateTime d1 = new LocalDateTime();
 
+////     todo array
+////    RuntimeException: Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 5 out of bounds for length 5
+//        int[] x = new int[5];
+//        x[4] = 2;
+//        x[5] = 3;
+//
+////      initialize a two-d array
+//        int[][] scores = new int[3][];
+//        scores[0] = new int[4];
+//        scores[1] = new int[6];
+//        scores[2] = new int [1];
+
+//      todo declaring,constructing, and initializing the array on One line
+        int x = 9;
+        int[] dots = {6,7,8,x};
+
+//        four objects created in the heap.
+//        1.int[][] array object.
+//        2.int[] : {4,3,4}
+//        3. int[] :{9,2}
+//        4.int[] :{3,4}
+        int [][] scores = {{4,3,4},{9,2},{3,4}};
+
 
 
     }
